@@ -9,3 +9,9 @@ jekyll -v
 
 # in Dev floder ...
 jekyll new ga_blog
+
+sudo gem update --system 3.2.3
+sudo bundle install
+
+>> bundle exec jekyll serve 
+jekyll serve
