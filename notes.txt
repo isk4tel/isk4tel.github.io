@@ -6,3 +6,6 @@ sudo gem install sass-embedded -v 1.58.3
 
 sudo gem install jekyll bundler
 jekyll -v
+
+# in Dev floder ...
+jekyll new ga_blog
