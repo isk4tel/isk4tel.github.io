@@ -15,3 +15,21 @@ sudo bundle install
 
 >> bundle exec jekyll serve 
 jekyll serve
+
+--                          # top development folder
+ | _posts                   # blog posts in meta markdown text format
+ | _site                    # final output of the site - compiled and that is what is served to the client and should be deployed to the web server
+ ---
+    | about 
+    | assets
+    | jekyll
+    ---
+      | 404.html            # static files
+      | index.html
+      | feed.xml
+ | _config.yaml             # main web project config file
+ | 404.html                 # default site file
+ | about.md                 # default site file
+ | index.md                 # default site file
+ | Gemfile                  # Ruby config file for Ruby Gem dependencies
+  
