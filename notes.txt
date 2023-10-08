@@ -17,6 +17,7 @@ sudo bundle install
 jekyll serve
 
 --                          # top development folder
+ | _drafts                  # draft blog posts (jekyll serve --draft)
  | _posts                   # blog posts in meta markdown text format
  | _site                    # final output of the site - compiled and that is what is served to the client and should be deployed to the web server
  ---
@@ -33,6 +34,18 @@ jekyll serve
  | index.md                 # default site file
  | Gemfile                  # Ruby config file for Ruby Gem dependencies
 
-
  Front matter variables : standard and custom (in psots and static files)
-  
+   - layout : post, page
+   - title: 
+   - author:
+   - date: (part of the link on the web site, overwrites date from file name)
+   - categories: (part of the link on the web site)
+   - permalink: (perma link for the page, overwrites categories + data default logic, can reference other front matter variable)
+
+Front matter defaults (defined in _config.yml)
+defaults :
+   - scope:
+      - path:
+      - type:
+   - values:
+      - #values
