@@ -32,4 +32,7 @@ jekyll serve
  | about.md                 # default site file
  | index.md                 # default site file
  | Gemfile                  # Ruby config file for Ruby Gem dependencies
+
+
+ Front matter variables : standard and custom (in psots and static files)
   
