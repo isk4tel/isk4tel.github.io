@@ -17,6 +17,8 @@ sudo bundle install
 jekyll serve
 
 --                          # top development folder
+ | _includes
+ | _layouts
  | _drafts                  # draft blog posts (jekyll serve --draft)
  | _posts                   # blog posts in meta markdown text format
  | _site                    # final output of the site - compiled and that is what is served to the client and should be deployed to the web server
@@ -35,7 +37,7 @@ jekyll serve
  | Gemfile                  # Ruby config file for Ruby Gem dependencies
 
  Front matter variables : standard and custom (in psots and static files)
-   - layout : post, page
+   - layout: post, page
    - title: 
    - author:
    - date: (part of the link on the web site, overwrites date from file name)
@@ -43,9 +45,32 @@ jekyll serve
    - permalink: (perma link for the page, overwrites categories + data default logic, can reference other front matter variable)
 
 Front matter defaults (defined in _config.yml)
-defaults :
+defaults:
    - scope:
       - path:
       - type:
    - values:
       - #values
+
+these is defined in _config.yml (default is minima theme)
+theme: minima
+
+rubygems.org : jekyll-theme (search)
+Gemfile <- after gem "minima", "~>2.0"
+gem "jekyll-theme-hacker"
+> In VC terminal window
+sudo bundle install 
+
+Layouts
+overwrite theme layouts
+_layouts folder
+
+Variables
+referenced by {{...}} need to have scope.variable
+
+Includes
+_includes folder
+refrenced with {% include ... %}
+
+Loops
+
